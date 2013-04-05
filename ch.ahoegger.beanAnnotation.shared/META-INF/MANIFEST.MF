@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ch.ahoegger.beanAnnotation.shared
+Bundle-SymbolicName: ch.ahoegger.beanAnnotation.shared;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ch.ahoegger.beanAnnotation.shared.Activator
+Export-Package: ch.ahoegger.beanAnnotation.shared,
+ ch.ahoegger.beanAnnotation.shared.beans,
+ ch.ahoegger.beanAnnotation.shared.services.common.text,
+ ch.ahoegger.beanAnnotation.shared.services.validation
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.scout.rt.shared;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

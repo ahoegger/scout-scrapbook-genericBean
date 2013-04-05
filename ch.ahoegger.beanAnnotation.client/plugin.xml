@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         name=""
+         point="org.eclipse.scout.service.services">
+      <proxy
+            factory="org.eclipse.scout.rt.client.services.ClientProxyServiceFactory"
+            class="ch.ahoegger.beanAnnotation.shared.IPersonService">
+      </proxy>
+      <service
+            class="ch.ahoegger.beanAnnotation.shared.services.validation.LocalPersonValidationService"
+            createImmediately="false"
+            factory="org.eclipse.scout.rt.client.services.ClientServiceFactory"
+            session="ch.ahoegger.beanAnnotation.client.ClientSession">
+      </service>
+   </extension>
+
+</plugin>

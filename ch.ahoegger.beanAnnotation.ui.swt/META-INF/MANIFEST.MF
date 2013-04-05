@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: My Application
+Bundle-SymbolicName: ch.ahoegger.beanAnnotation.ui.swt;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: ch.ahoegger.beanAnnotation.ui.swt.Activator
+Export-Package: ch.ahoegger.beanAnnotation.ui.swt;uses:="org.eclipse.scout.rt.ui.swt,org.eclipse.scout.rt.client.session,org.osgi.framework",
+ ch.ahoegger.beanAnnotation.ui.swt.application,
+ ch.ahoegger.beanAnnotation.ui.swt.application.button,
+ ch.ahoegger.beanAnnotation.ui.swt.application.menu,
+ ch.ahoegger.beanAnnotation.ui.swt.editor,
+ ch.ahoegger.beanAnnotation.ui.swt.perspective,
+ ch.ahoegger.beanAnnotation.ui.swt.views
+Require-Bundle: ch.ahoegger.beanAnnotation.client;visibility:=reexport,
+ ch.ahoegger.beanAnnotation.shared,
+ org.eclipse.scout.rt.ui.swt,
+ org.eclipse.scout.net,
+ org.eclipse.equinox.app,
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.ui.views
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

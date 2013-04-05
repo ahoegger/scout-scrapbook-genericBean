@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: My Application
+Bundle-SymbolicName: ch.ahoegger.beanAnnotation.ui.swing;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ch.ahoegger.beanAnnotation.ui.swing.Activator
+Bundle-ActivationPolicy: lazy
+Scout-Project: ch.ahoegger.beanAnnotation
+Scout-Project-Alias: beanAnnotation
+Require-Bundle: org.eclipse.scout.rt.ui.swing,
+ ch.ahoegger.beanAnnotation.client;visibility:=reexport,
+ ch.ahoegger.beanAnnotation.shared,
+ org.eclipse.scout.net
+Export-Package: ch.ahoegger.beanAnnotation.ui.swing;uses:="org.eclipse.scout.rt.ui.swing,org.eclipse.scout.rt.client.session,org.osgi.framework"
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
